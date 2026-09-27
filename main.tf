@@ -1,6 +1,6 @@
 module "network" {
 
-	source   = "./module/network"
+	source   = "./modules/network"
 
 	location            = var.location
 	resource_group_name = var.resource_group_name
@@ -12,7 +12,7 @@ module "network" {
 
 
 module "web_vm" {
-	source = "./modules/computer"
+	source = "./modules/compute"
 
 	
 	location            = var.location
